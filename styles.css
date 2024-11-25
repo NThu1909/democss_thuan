@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #e7e6e6;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  height: 70px;
+  background-color: #0e64c7;
+}
+.header--left {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  gap: 16px;
+}
+.header .header--left .header--logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+.header--left .menu--item {
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 1;
+}
+.header--right {
+  height: 70px;
+  align-items: center;
+}
+.header--right .icons .item--icon {
+  opacity: 1;
+}
+.header--right .icons .item--icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.header--right .icons {
+  display: flex;
+  gap: 18px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 1;
+}
+.menu--item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.item-hr hr {
+  height: 32px;
+  width: 0.5px;
+  opacity: 0.5;
+}
+
+.version,
+.mode {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.dropdown--version-icon {
+  font-size: 14px;
+}
+.dark-light-menu {
+  background-color: #29253e;
+  font-size: 14px;
+  width: 128px;
+  height: 100px;
+  line-height: 26px;
+  padding: 10px 10px;
+  margin-top: 33px;
+  transform: translateX(29px);
+  z-index: 999;
+  border-radius: 10px;
+  position: absolute;
+  display: none;
+}
+
+.mode:hover .dark-light-menu {
+  display: block;
+}
+.light-mode,
+.dark-mode,
+.auto-mode {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: 8px;
+}
+.body .title-name-page {
+  padding: 10px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #454141;
+}
+.body {
+}
+
+.body .user-page table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 10px 10px;
+  margin: 20px 40px;
+  font-size: 14px;
+  color: #454141;
+}
+.header-manage-users {
+  display: flex;
+  align-items: center;
+  gap: 377px;
+}
+.header-manage-users .btn-manage-user {
+  display: flex;
+  gap: 20px;
+}
+.btn-manage-user .btn-item {
+  border: 1px solid;
+  padding: 5px 5px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.btn-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.btn-item.addnew {
+  background: rgb(53, 237, 53);
+  color: #f3eded;
+}
+.update-delete-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.btn-item a {
+  text-decoration: none;
+  color: white;
+}
+.btn-item.update {
+}
+.btn-item.delete {
+}
+/* footer */
+.footer {
+  position: absolute;
+  background-color: #0e64c7;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+}
+.footer-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: white;
+  font-style: italic;
+}
